@@ -1,4 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Oura Crashout Dashboard
+
+A dashboard that analyzes your Oura Ring data to predict when you might "crash out" based on sleep, activity, and stress data.
+
+## Running on Replit
+
+1. Fork this repository to your Replit account
+2. The project will automatically install dependencies and start
+3. Once running, you'll need to:
+   - Sign in with your Oura account
+   - Provide your Personal Access Token (PAT)
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+## Features
+
+- Sleep score analysis
+- Daily steps tracking
+- Stress level monitoring
+- Crash out risk prediction
+- Interactive charts for data visualization
+
+## Environment Variables
+
+No environment variables are required for basic functionality. The app uses client-side storage for the Oura PAT.
 
 ## Getting Started
 
