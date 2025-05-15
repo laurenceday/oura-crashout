@@ -30,8 +30,11 @@ interface OuraApiResponse {
     weight?: number;
     height?: number;
   };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   sleep?: any[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   activity?: any[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   stress?: any[];
   error?: string;
 }
@@ -148,7 +151,7 @@ export default function Dashboard() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
       <header className="text-center mb-4">
         <h1 className="text-3xl font-bold text-black">Oura Ham Crashboard</h1>
-        <p className="text-sm text-black">Because I want to know who I shouldn't lend money to</p>
+        <p className="text-sm text-black">Because I want to know who I shouldn&apos;t lend money to</p>
         <button
           className="mt-2 px-4 py-1 bg-gray-200 rounded text-black hover:bg-gray-300 text-xs"
           onClick={() => console.log('Oura API Response:', ouraInfo)}
