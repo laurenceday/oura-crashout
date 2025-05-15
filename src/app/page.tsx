@@ -10,6 +10,8 @@ import {
   Title,
   Tooltip,
   Legend,
+  ChartOptions,
+  ChartData
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
@@ -198,7 +200,7 @@ export default function Dashboard() {
                     borderColor: 'rgb(75, 192, 192)',
                     tension: 0.1
                   }]
-                }}
+                } as ChartData<'line'>}
                 options={{
                   scales: {
                     y: {
@@ -206,7 +208,7 @@ export default function Dashboard() {
                       max: 100
                     }
                   }
-                }}
+                } as ChartOptions<'line'>}
               />
             </div>
           )}
